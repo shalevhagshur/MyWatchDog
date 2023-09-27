@@ -4,7 +4,7 @@ The Website Watcher Windows Service is a Python-based service that monitors a we
 
 ## Important shit to know
  after stoping the service wait 3 minutes before reinstalling
- some websites block watchdog by blocking request so it wont work on them
+ some websites block watchdog by blocking request so it wont work on themgit commit -m "first commit"J
 
 ## Installation
 
@@ -17,28 +17,28 @@ The Website Watcher Windows Service is a Python-based service that monitors a we
    Clone this repository to your local machine or download the source code.
 
 3. **Configure the Service**:
-   - Open the `WebsiteWatcher.py` script in a text editor.
+   - Open the `Watchdog.py` script in a text editor.
    - Modify the `website_url` variable to specify the URL of the website you want to monitor.
 
 4. **Install the Windows Service**:
-   Open a Command Prompt or PowerShell window as an administrator and navigate to the directory containing `WebsiteWatcher.py`. Install the service using the following command:
+   Open a Command Prompt or PowerShell window as an administrator and navigate to the directory containing `Watchdog.py`. Install the service using the following command:
 
 5. **Start and Manage the Service**:
 - Start the service:
   ```
-  py -m pywin32_system32 start WebsiteWatcherService
+  py -m pywin32_system32 start WebStalkerService
   ```
 - Stop the service:
   ```
-  py -m pywin32_system32 stop WebsiteWatcherService
+  py -m pywin32_system32 stop WebStalkerService
   ```
 - View the service status:
   ```
-  py -m pywin32_system32 status WebsiteWatcherService
+  py -m pywin32_system32 status WebStalkerService
   ```
 - Uninstall the service
   ```
-  py -m pywin32_system32 remove WebsiteWatcherService
+  py -m pywin32_system32 remove WebStalkerService
   ```
 
 ## Usage
